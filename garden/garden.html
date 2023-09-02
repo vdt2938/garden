@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <div class="header" id="header">
+
+        <div class="logo">
+            logo of plant
+        </div>
+    
+
+    
+        <form class="header-form" action="">
+            <input type="text" placeholder="which you want to grow" class="veg">
+            <button onclick="getvalue()">add</button>
+            <p class="instruction">
+                add seed ya want to grow
+                then helper will help ya with the rest
+            </p>
+            <h3>location</h3>
+            <p class="instruction">when is best time to grow</p>
+            <p class="warning">Warning!!!</p>
+        </form>
+    </div>
+    
+    
+    <div class="sidebar">
+    
+        <a href="#header">home</a>
+        <p class="note">add temperature and greeting</p>
+        <a href="#plant">plant</a>
+        <a href="#weight">weight</a>
+        <p class="note">add list of plant </p>
+        <a href="#condition">temperature</a>
+        <p class="note">tell what is temperature</p>
+        <a href="#reminder">remind</a>
+        <a href="#calender">calender</a>
+        <a href="#weather">weather</a>
+    
+        <a href="#math">math</a>
+    </div>
+    
+    
+    <div class="content">
+    
+        <div class="plant">
+    
+            <h3>tomato: season : date</h3>
+    
+            <img src="img/tomato.jpeg" alt="tomato">
+    
+    
+    
+            <form>
+                <input type="radio" id="indoor" name="inorout" value="indoor">
+                <label for="indoor">indoor</label><br>
+                <input type="radio" id="outdoor" name="inorout" value="outdoor">
+                <label for="outdoor">outdoor</label><br>
+    
+                <label for="">when</label>
+                <input type="date">
+    
+    
+            </form>
+            
+    
+            <table>
+           
+                <tr>
+                    <td>best time to plant</td>
+                    <td colspan="4">zone</td>
+                </tr>
+                <tr>
+                    <th>stage</th>
+                    <th>light</th>
+                    <th>temperature tolerance</th>
+                    <th>humid</th>
+                    <th>height</th>
+                </tr>
+                <tr>
+                    <td>geminate</td>
+                    <td>18 hours</td>
+                    <td>day 70-80 <br> night 60-70</td>
+                    <td>65% to 90%</td>
+                    <td rowspan="4">
+                        4ft
+                        <p>note: if more than 6inch then repot</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>seedling</td>
+                    <td>18 hours</td>
+                    <td>day 70-80<br> night 60-70</td>
+                    <td>65% to 90%</td>
+                </tr>
+                <tr>
+                    <td>vegetative</td>
+                    <td>18 hours</td>
+                    <td>day 70-80 <br>night 60-70</td>
+                    <td>65% to 90%</td>
+                </tr>
+                <tr>
+                    <td>flowering</td>
+                    <td>12 hours</td>
+                    <td>day 70-80<br> night 60-70</td>
+                    <td>65% to 90%</td>
+                </tr>
+            </table>
+    
+            
+            <div>
+                <h3>common pest and disease</h3>
+                <h4>pest</h4>
+                <p></p>
+                <h4>disease</h4>
+                <p></p>
+            </div>
+    
+        </div>
+    
+        <div class="weight" id="weight">
+            <h1>weight</h1>
+            <p>
+                gram
+                <br>
+                ounce(oz) is 28 gram
+                <br>
+                pound(lb) is 16 oz
+            </p>
+            <form method="get" onsubmit="">
+    
+                <label>how much ya got:</label><br>
+                <input type="text" value="0">
+                <button id="weight-btn">try</button>
+            </form>
+    
+            <div id="harvest">how much you get</div>
+    
+        </div>
+    
+        <div class="condition" id="condition">
+            <h1>condition</h1>
+            <hr>
+            -temp
+            <h2>Temperature Converter</h2>
+            <hr>
+            <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+    
+            <p>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                    oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+            </p>
+            <p>Celcius: <span id="outputCelcius"></span></p>
+            humid
+            light
+            nutrient
+            soil
+        </div>
+    
+        <div id="reminder" class="reminder">
+            <h1>reminder</h1>
+            <hr>
+            dont forget to water
+            
+    
+        </div>
+    
+        <div id="calender" class="calender">
+            <h1>calender</h1>
+            <hr>
+            when to plant
+            when to harvest
+        </div>
+    
+        <div id="weather" class="weather">
+            <h1>weather</h1>
+            <hr>
+            record weather
+        </div>
+    
+        <div id="math" class="math">
+    
+            <h1>math</h1>
+            <hr>
+            <h3>geometry</h3>
+            size of plant
+            height
+            water (ph and )
+            soil
+            temp
+            weather
+            nutrient
+
+
+            for indoor
+            
+            nutrient
+            height
+            temp
+            humid
+            water
+            light
+
+            <h3>statistic</h3>
+            water
+            weather
+            when
+            how much yeild
+    
+            <h3>plane and function</h3>
+            <!-- 
+                compare 
+                each 
+                temperature,
+                condition
+                weight
+                nutrient
+                to find better method to grow good plants
+    
+            -->
+            data
+            compare
+        </div>
+    
+    
+    </div>
+
+    <footer>
+
+    </footer>
+</div>
+    <script src="garden.js"></script>
+</body>
+</html>
