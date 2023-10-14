@@ -8,36 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>garden</h1>
-    </header>
-    <article>
-        <div class="data">
-            <label>plant</label>
-            <input type="text">
-            <br>
-            <label>how many seed</label>
-            <input type="number">
-            <br>
-            <label>when to sow</label>
-            <input type="date">
-            <br>
-            <button type="button" onclick="myFunction()">Try it</button>
+    <div class="wrapper">
+
+        <header>
+            <h1>garden</h1>
+            <button class="darkmode" onclick="darkmode()">dark mode</button>
+        </header>
+        <div class="container">
+            <article>
+                <div class="data">
+                    <label>plant</label>
+                    <input class="plantname" type="text">
+                    
+                    <label>how many seed</label>
+                    <input class="howmanyseed" type="number">
+                    
+                     
+                    <label>when to sow</label>
+                    <input class="date" type="date">
+                     
+                    <button class="create-btn" type="button" onclick="myFunction()">create</button>
+                </div>
+            </article>
+    
+            <main>
+           
+                <div>
+                    <table class="plant">
+                        <tr>
+                            <th>name</th>
+                            <th>number of seed</th>
+                            <th>when to sow</th>
+                            <th>number sprout</th> 
+                        </tr>
+                    </table>
+                </div>
+                
+            </main>
         </div>
-    </article>
-    <main>
-   
-        <div>
-            <table class="plant">
-                <tr>
-                    <th>name</th>
-                    <th>number of seed</th>
-                    <th>number sprout</th>
-                </tr>
-            </table>
-        </div>
+            
         
-    </main>
+    </div>
     
     <script src="garden.js"></script>
 </body>
