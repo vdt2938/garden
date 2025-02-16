@@ -8,236 +8,218 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
 
-    <div class="header" id="header">
-
-        <div class="logo">
-            logo of plant
-        </div>
-    
-
-    
-        <form class="header-form" action="">
-            <input type="text" placeholder="which you want to grow" class="veg">
-            <button onclick="getvalue()">add</button>
-            <p class="instruction">
-                add seed ya want to grow
-                then helper will help ya with the rest
-            </p>
-            <h3>location</h3>
-            <p class="instruction">when is best time to grow</p>
-            <p class="warning">Warning!!!</p>
-        </form>
+    <div class="weather">
+        <!-- tell which seed is good time to sow  from investory-->
+        <h1>sunny sunny sunny!</h1>
     </div>
-    
-    
-    <div class="sidebar">
-    
-        <a href="#header">home</a>
-        <p class="note">add temperature and greeting</p>
-        <a href="#plant">plant</a>
-        <a href="#weight">weight</a>
-        <p class="note">add list of plant </p>
-        <a href="#condition">temperature</a>
-        <p class="note">tell what is temperature</p>
-        <a href="#reminder">remind</a>
-        <a href="#calender">calender</a>
-        <a href="#weather">weather</a>
-    
-        <a href="#math">math</a>
-    </div>
-    
-    
-    <div class="content">
-    
-        <div class="plant">
-    
-            <h3>tomato: season : date</h3>
-    
-            <img src="img/tomato.jpeg" alt="tomato">
-    
-    
-    
-            <form>
-                <input type="radio" id="indoor" name="inorout" value="indoor">
-                <label for="indoor">indoor</label><br>
-                <input type="radio" id="outdoor" name="inorout" value="outdoor">
-                <label for="outdoor">outdoor</label><br>
-    
-                <label for="">when</label>
-                <input type="date">
-    
-    
-            </form>
+
+    <div class="flex">
+
+        <div class="sidebar">
+            <p>inventory</p>
+            <div class="inventory_list">
+                <p>how many plants</p>
+                <p>seed inventory</p>
+                <p>nutrient inventory</p>
+            </div>
             
-    
-            <table>
-           
-                <tr>
-                    <td>best time to plant</td>
-                    <td colspan="4">zone</td>
-                </tr>
-                <tr>
-                    <th>stage</th>
-                    <th>light</th>
-                    <th>temperature tolerance</th>
-                    <th>humid</th>
-                    <th>height</th>
-                </tr>
-                <tr>
-                    <td>geminate</td>
-                    <td>18 hours</td>
-                    <td>day 70-80 <br> night 60-70</td>
-                    <td>65% to 90%</td>
-                    <td rowspan="4">
-                        4ft
-                        <p>note: if more than 6inch then repot</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>seedling</td>
-                    <td>18 hours</td>
-                    <td>day 70-80<br> night 60-70</td>
-                    <td>65% to 90%</td>
-                </tr>
-                <tr>
-                    <td>vegetative</td>
-                    <td>18 hours</td>
-                    <td>day 70-80 <br>night 60-70</td>
-                    <td>65% to 90%</td>
-                </tr>
-                <tr>
-                    <td>flowering</td>
-                    <td>12 hours</td>
-                    <td>day 70-80<br> night 60-70</td>
-                    <td>65% to 90%</td>
-                </tr>
-            </table>
-    
+            <p>plant disease and pest</p>
+            <div class="disease_and_pest_list">
+                <p>disease</p>
+                <p>pest</p>
+            </div>
+            <p>method of grow</p>
+            <div class="method_list">
+                <p>tip for germinate</p>
+                <p>soil</p>
+                <p>indoor</p>
+                <p>outdoor</p>
+
+            </div>
+            
+
+        </div>
+
+        <div style="display: none;"  class="main inventory">
+            <div>
+                <h1>seed inventory</h1>
+                
+                <div>
+                    <p style="text-align: center;">how many seed you have</p>
+                    <p>fruit:1</p>
+                    <p>vegetable: 3</p>
+                    <p>flower:0</p>
+                </div>
+                <input type="text" name="" id="">
+                <select name="" id="">
+                    <option value="">vegetable</option>
+                    <option value="">fruit</option>
+                    <option value="">flower</option>
+                </select>
+                <button>add seed</button>
+
+            </div>
             
             <div>
-                <h3>common pest and disease</h3>
-                <h4>pest</h4>
-                <p></p>
-                <h4>disease</h4>
-                <p></p>
+                <h3>watermelon</h3>
+               
+                <p>
+                    best time to sow
+                    mar-may and july-aug
+                </p>
+                <p>germinate condition</p>
+                <button>run out?</button>
+            </div>
+
+            <div>
+                <h3>tomato</h3>
+               
+                <p>
+                    best time to sow
+                    mar-may and july-aug
+                </p>
+                <p>germinate condition</p>
+                <button>run out?</button>
+            </div>
+
+            <div>
+                <h3>basil</h3>
+               
+                <p>
+                    best time to sow
+                    mar-may and aug-oct
+                </p>
+                <p>germinate condition</p>
+                <button>run out?</button>
+            </div>
+
+            <div>
+                <h3>pepper, grand bell</h3>
+               
+                <p>
+                    best time to sow
+                    dec-mar
+                </p>
+                <p>germinate condition</p>
+                <button>run out?</button>
+            </div>
+
+        </div>
+
+        <div style="display: none;"  class="main garden">
+            <h1>garden</h1>
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <p>when to harvest</p>
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
+    
+    
             </div>
     
-        </div>
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <p>when to harvest</p>
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
     
-        <div class="weight" id="weight">
-            <h1>weight</h1>
-            <p>
-                gram
-                <br>
-                ounce(oz) is 28 gram
-                <br>
-                pound(lb) is 16 oz
-            </p>
-            <form method="get" onsubmit="">
     
-                <label>how much ya got:</label><br>
-                <input type="text" value="0">
-                <button id="weight-btn">try</button>
-            </form>
+            </div>
+
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <p>when to harvest</p>
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
     
-            <div id="harvest">how much you get</div>
     
-        </div>
-    
-        <div class="condition" id="condition">
-            <h1>condition</h1>
-            <hr>
-            -temp
-            <h2>Temperature Converter</h2>
-            <hr>
-            <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
-    
-            <p>
-                <label>Fahrenheit</label>
-                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
-                    oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-            </p>
-            <p>Celcius: <span id="outputCelcius"></span></p>
-            humid
-            light
-            nutrient
-            soil
-        </div>
-    
-        <div id="reminder" class="reminder">
-            <h1>reminder</h1>
-            <hr>
-            dont forget to water
+            </div>
             
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <p>when to harvest</p>
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
     
-        </div>
     
-        <div id="calender" class="calender">
-            <h1>calender</h1>
-            <hr>
-            when to plant
-            when to harvest
-        </div>
+            </div>
     
-        <div id="weather" class="weather">
-            <h1>weather</h1>
-            <hr>
-            record weather
-        </div>
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <p>when to harvest</p>
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
     
-        <div id="math" class="math">
     
-            <h1>math</h1>
-            <hr>
-            <h3>geometry</h3>
-            size of plant
-            height
-            water (ph and )
-            soil
-            temp
-            weather
-            nutrient
+            </div>
 
-
-            for indoor
+            <div class="item">
+                <div class="data">
+                    <h3>watermelon</h3>
+                    <hr>
+                    <p>when i did sow</p>
+                    <p>how many week</p>
+                    <!-- countdown until harvest -->
+                    <p>when to harvest</p>
+                    <!-- tell which week to harvest -->
+                </div>
+                
+                <img src="img/watermelon.jpeg" alt="watermelon">
+                
+               
+    
+    
+            </div>
             
-            nutrient
-            height
-            temp
-            humid
-            water
-            light
-
-            <h3>statistic</h3>
-            water
-            weather
-            when
-            how much yeild
-    
-            <h3>plane and function</h3>
-            <!-- 
-                compare 
-                each 
-                temperature,
-                condition
-                weight
-                nutrient
-                to find better method to grow good plants
-    
-            -->
-            data
-            compare
         </div>
-    
-    
+
+        <div    class="main disease pest">
+            <h3>disease</h3>
+            <h3>pest</h3>
+        </div>
+
+        <div style="display: none;" class="main method">
+
+        </div>
+
     </div>
-
-    <footer>
-
-    </footer>
-</div>
+    
     <script src="garden.js"></script>
 </body>
 </html>
